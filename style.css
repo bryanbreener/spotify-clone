@@ -1,0 +1,300 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-rows: 40px 1fr 100px;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+header {
+  padding: 10px 0;
+  text-align: center;
+  grid-row: 1 / 2;
+  background-color: rgb(206, 204, 182);
+}
+.wrapper {
+  grid-row: 2 / 3;
+  display: grid;
+  grid-template-columns: 13% 1fr 15%;
+}
+
+.home {
+  background-color: cornsilk;
+}
+.home__options {
+  padding-left: 20px;
+  padding-top: 40px;
+}
+.home__options li {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.home__options li a {
+  margin-left: 15px;
+  color: black;
+  font-size: 1rem;
+}
+.home__options li:nth-child(4) {
+  font-size: 17px;
+  margin-top: 25px;
+  color: black;
+}
+.home__playlists {
+  height: 440px;
+  padding-left: 20px;
+  overflow-y: scroll;
+}
+.home__playlists li {
+  margin: 5px 0;
+}
+
+.main {
+  height: calc(100vh - 40px - 100px);
+  background-color: cornsilk;
+  overflow-y: scroll;
+}
+
+.main__user {
+  margin: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  height: 35px;
+}
+
+.main__user--buttons input {
+  height: 35px;
+  width: 35px;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  background-position: center;
+  background-size: 25px;
+}
+.main__user--profile button > * {
+  margin: 0 3px;
+  font-size: 17px;
+  font-weight: bold;
+}
+.main__user--profile button {
+  height: 35px;
+  display: flex;
+  border-radius: 25px;
+  align-items: center;
+}
+
+.main__user--profile button img {
+  height: 70%;
+}
+
+.main__good--songs {
+  display: grid;
+  width: inherit;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 80px 80px;
+  gap: 10px;
+  margin: 0 20px;
+}
+
+h2 {
+  margin-left: 20px;
+}
+p {
+  margin: 0;
+}
+.main__good--songs div {
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+.main__good--songs div img {
+  width: 40%;
+  height: 100%;
+  margin-right: 10px;
+  border-radius: 10px 0 0 10px;
+}
+.main__songs--list {
+  margin: 0 20px;
+}
+
+.main__songs--list-items {
+  display: flex;
+  width: 1fr;
+  gap: 0 20px;
+}
+.main__songs--list-items > div {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.15);
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+}
+.items {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 15px 0;
+}
+.items p:first-child {
+  font-weight: bold;
+}
+
+.main__songs--list img {
+  margin-top: 15px;
+  width: 80%;
+  border-radius: 18px;
+}
+
+.playbar {
+  padding: 0 20px;
+  background-color: rgb(206, 204, 182);
+  border: 1px rgba(0, 0, 0, 0.3) solid;
+  grid-row: 3 / 4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.playbar__titlesong {
+  display: flex;
+  width: 300px;
+  align-items: center;
+}
+.playbar__titlesong img {
+  width: 8%;
+}
+
+.playbar__titlesong img:first-child {
+  width: 20%;
+  margin-right: 15px;
+  border-radius: 10px;
+}
+.playbar__titlesong--description {
+  margin-right: 20px;
+}
+
+.playbar__titlesong--description p {
+  font-size: 0.9rem;
+}
+.playbar__titlesong--description p:first-child {
+  font-weight: bold;
+  font-size: 1rem;
+}
+.playbar__options {
+  height: 100px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.playbar__options--control {
+  height: 50%;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.playbar__options--control button {
+  background-color: rgb(206, 204, 182);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border-radius: 90px; */
+  height: 70%;
+}
+
+.playbar__options--control img {
+  width: 60%;
+}
+
+.w3-config {
+  width: 100%;
+  height: 5px;
+}
+.playbar__moreoptions {
+  width: 250px;
+  display: flex;
+}
+
+.playbar__moreoptions button:nth-child(4) {
+  width: 150px;
+  align-items: center;
+  display: flex;
+}
+
+.playbar__moreoptions button {
+  border: none;
+  background-color: rgb(206, 204, 182);
+}
+
+.playbar__moreoptions img {
+  height: 70%;
+}
+
+.connection {
+  background-color: cornsilk;
+}
+
+.connection__facebook {
+  padding: 40px 20px 20px 20px;
+  display: flex;
+  align-items: center;
+}
+.connection__facebook p {
+  margin-left: 8px;
+}
+
+.connection__search {
+  background-color: rgb(206, 204, 182);
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.connection__search input {
+  background-color: rgb(206, 204, 182);
+  width: 80%;
+  margin: 5px 0;
+  border: none;
+  outline: none;
+}
+.connection__search img {
+  height: 17px;
+  margin-right: 5px;
+}
+
+.connection__list {
+  padding: 0 20px;
+}
+
+.connection__list li {
+  display: flex;
+  margin: 30px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.connection__list li > img {
+  width: 20%;
+  border-radius: 40px;
+}
+
+.connection__list button {
+  background-color: cornsilk;
+  border: none;
+}
+
+.connection__list button > img {
+  width: 70%;
+}
